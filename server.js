@@ -22,6 +22,8 @@ var server = http.createServer(function (request, response) {
   /******** 从这里开始看，上面不要看 ************/
   // 运行时可以：node server.js 8888 > log 2>&1 &
   // 能够将js文件在后台运行，并且输出返回在log文件里面
+  // 此时系统会给你一个该程序后台运行的进程号
+  // 关掉该js的方法：kill -9 进程号 | killall node
 
   console.log("有个靓仔发请求过来啦！路径（带查询参数）为：" + pathWithQuery);
 
